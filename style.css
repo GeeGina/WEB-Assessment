@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    color: #383838;
+    font-weight: 900;
+    
+}
+
+h1 , p , h3 ,a{
+padding: 24px;
+}
+
+h1{
+    font-size: 48px;
+}
+h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 24px;
+}
+/*-------nav bar-------*/
+nav {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 24px;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+section{
+    padding: 32px 24px;
+    
+}
+.hero{
+    background-color: silver;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.hero__box1{
+    width: 60%;
+    padding: 32px 24px;
+}
+.hero__box1 img{
+    width: 100%;
+}
+.button {
+    background-color: #383838;
+    color: white;
+    text-align: center;
+    padding: 8px 60px;
+    display: block;
+    margin: auto;
+}
+
+/*-------information-------*/
+.information h2{
+    text-align: left;
+}
+.information a {
+    color: aqua;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.information__box1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.information__box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.information__box3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inf{
+    width: 60%;
+    padding: 32px 24px;
+}
+.inf img{
+    width: 100%;
+}
+/*-------course-------*/
+
+.course__box{
+    margin: 32px 72px;
+    display: flex;
+    flex-flow: row wrap;
+
+
+}
+.course__box div{
+    width: 25%;
+
+}
+/*-------thesis-------*/
