@@ -1,69 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: 'Poppins', sans-serif;
     color: #383838;
-    
-    
-}
-/* body{
-    width: 100%;
-} */
-h1,h2,h3,p,a{
-padding: 8px;
-text-decoration:none
-}
-h1{
-    font-size: 48px;
-}
-h2{
-    text-align: center;
-    font-size: 32px;
-    font-weight: 800;
-    
-}
-/*-------nav bar-------*/
-nav {
-    width: 100%;
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 16px 24px;
-    text-align: center;
-}
-.logo{
-    display: flex;
-    align-items: center;
+
+
 }
 
-/*-------hero-------*/
-.hero{
-    width: 100%;
-    background-color: #D6D6D6;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.hero__box1{
-    width: 60%;
-    padding: 32px 24px;
-}
-.hero__box1 img{
-    width: 100%;
-}
-.hero__box2{
-    width: 40%;
-    padding-right: 10%;
-    padding-left: 16px;
-    
-}
 .button {
     background-color: #383838;
     width: 80%;
@@ -74,115 +21,271 @@ nav {
     margin: auto;
 }
 
-/*-------information-------*/
-.information h2{
-    text-align: left;
+@media screen and (min-width: 426px) {
+
+  
+    h1,
+    h2,
+    h3,
+    p,
+    a {
+        padding: 8px;
+        text-decoration: none
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 800;
+
+    }
+
+    /*-------nav bar-------*/
+    nav {
+        width: 100%;
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 16px 24px;
+        text-align: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    /*-------hero-------*/
+    .hero {
+        width: 100%;
+        background-color: #D6D6D6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .hero__box1 {
+        width: 60%;
+        padding: 32px 24px;
+    }
+
+    .hero__box1 img {
+        width: 100%;
+    }
+
+    .hero__box2 {
+        width: 40%;
+        padding-right: 10%;
+        padding-left: 16px;
+
+    }
+
+
+    /*-------information-------*/
+    .information h2 {
+        text-align: left;
+    }
+
+    .information a {
+        color: aqua;
+    }
+
+    .information {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .information__parent__box {
+        width: 40%;
+    }
+
+    .information__parent__box img {
+        width: 40%;
+        height: 100%;
+
+    }
+
+    .information__box {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid whitesmoke;
+        padding: 16px;
+
+    }
+
+    .information__box img {
+        width: 35%;
+
+    }
+
+    .inf {
+        width: 60%;
+        padding: 32px 24px;
+    }
+
+    .inf img {
+        width: 100%;
+    }
+
+    /*-------course-------*/
+    .course {
+        width: 100%;
+        background-color: #EBEBEB;
+
+    }
+
+    .course__parent__box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 32px 16px;
+        padding: 32px 72px;
+    }
+
+    .course__box {
+        width: 25%;
+        background-color: white;
+    }
+
+    .course img {
+        width: 100%;
+    }
+.course__button{
+    display: none;
 }
-.information a {
-    color: aqua;
-}
-.information{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    /* -------thesis------- */
+    .thesis {
+        width: 100%;
+        background-color: #FCFCFC;
+    }
+
+    .thesis__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 32px 0;
+    }
+
+    .thesis__box1 {
+        width: 60%;
+        margin: 0 24px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .thesis__box2 {
+        width: 40%;
+    }
+
+    .thesis__box2 img {
+        width: 35%;
+    }
+
+    .thesis__box2 span {
+        width: 65%;
+    }
+
+    .thesis__box2x {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px;
+
+    }
+
+    /*-------footer-------*/
+    .footer {
+        width: 100%;
+        border-top: 1px solid gainsboro;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .footer span {
+        margin: 16px 24px;
+    }
+
+    .footer div {
+        margin: 16px 24px;
+    }
 }
 
-.information__parent__box{
-    width: 40%;
-}
-.information__parent__box img{
-    width: 40%;
-    height: 100%;
-    
-}
-.information__box {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid whitesmoke;
-    padding: 16px;
+/*----------------mobile----------------*/
+@media screen and (max-width: 426px) {
+    h2{
+        text-align: center;
+    }
+    /*-------nav bar-------*/
 
-}
-.information__box img{
-    width: 35%;
-    
-}
-.inf{
-    width: 60%;
-    padding: 32px 24px;
-}
-.inf img{
-    width: 100%;
-}
-/*-------course-------*/
-.course{
-    width: 100%;
-    background-color: #EBEBEB;
+    /*-------hero-------*/
+    .hero {
+        /* width: 100%; */
+        background-color: #D6D6D6;
+    }
 
-}
+    .hero img {
+        width: 100%;
+    }
+
+    .inf {
+        display: none;
+    }
+
+    .hero__box2 {
+        margin: 32px 16px;
+        padding-bottom: 32px;
+    }
+
+    .button {
+        background-color: #B5B5B5;
+        margin-top: 24px;
+        border: 0px solid transparent;
+    }
+
+    /*-------information-------*/
+    .information__parent__box {
+        margin: 16px 16px 32px 16px;
+    }
+
+    .information a {
+        color: aqua;
+    }
+
+    /*-------course-------*/
+    .course__box {
+        display: none;
+    }
 .course__parent__box{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 32px 16px;
-    padding: 32px 72px;
+    flex-direction: column;
 }
-.course__box {
-   width: 25%; 
-    background-color: white;
-
-
+.course__button{
+    background-color: #D6D6D6;
+    border: 0px solid transparent;
 }
-.course img{
-    width: 100%;
+    /*-------thesis-------*/
+    .thesis__box1 h3 ,.thesis__box1 p,.thesis__box2 {
+        display: none;
+    }
+/*-------thesis-------*/
+.footer div{
+    display: none;
 }
-
-/* -------thesis------- */
-.thesis{
-    width: 100%;
-    background-color: #FCFCFC;
-}
-.thesis__box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 32px 0;
-}
-.thesis__box1{
-    width: 60%;
-    margin: 0 24px;
-}
-video{
-    width: 100%;
-}
-.thesis__box2{
-    width: 40%;
-}
-.thesis__box2 img{
-    width: 35%;
-}
-.thesis__box2 span{
-    width: 65%;
-}
-.thesis__box2x{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-
-}
-/*-------footer-------*/
 .footer{
     width: 100%;
-    border-top: 1px solid gainsboro;
-    display: flex;
-    justify-content: space-between;
-    
+    margin: 16px;
 }
-.footer span {
-    margin: 16px 24px;
-}
-.footer div{
-    margin: 16px 24px;
 }
