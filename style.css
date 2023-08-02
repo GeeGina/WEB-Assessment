@@ -31,8 +31,6 @@ a:active{
     color: #B5B5B5;
 }
 @media screen and (min-width: 426px) {
-
-
     h1,
     h2,
     h3,
@@ -52,7 +50,6 @@ a:active{
         font-weight: 800;
 
     }
-
     /*-------nav bar-------*/
     .desktop {
         width: 100%;
@@ -62,6 +59,7 @@ a:active{
         flex-direction: row;
         justify-content: space-between;
         margin: 16px 24px;
+        
         text-align: center;
     }
 .textlink{
@@ -107,7 +105,6 @@ a:active{
 
     .hero__box2 {
         width: 40%;
-        padding-right: 10%;
         padding-left: 16px;
 
     }
@@ -181,7 +178,11 @@ a:active{
         width: 25%;
         background-color: white;
     }
-
+    .course h2{
+        /* margin: 32px 0 32px 0; */
+        padding-top: 32px;
+        font-weight: 900;
+    }
     .course img {
         width: 100%;
     }
@@ -207,7 +208,10 @@ a:active{
         width: 60%;
         margin: 0 24px;
     }
-
+.thesis h2{
+    padding-top: 32px;
+        font-weight: 900;
+}
     video {
         width: 100%;
     }
@@ -269,8 +273,6 @@ a:active{
     .mobile {
         width: 100%;
         height: 64px;
-       
-        
     }
     
     .mobile ul {
@@ -334,7 +336,7 @@ a:active{
         border: 1px solid #F2F2F2;
     }
     .course h2{
-        margin: 32px 0 16px 0;
+        margin: 32px 0 32px 0;
         font-weight: 900;
     }
     .course__box {
@@ -345,7 +347,6 @@ a:active{
         width: 100%;
         display: flex;
         flex-direction: column;
-        
     }
 
     .course__button {
