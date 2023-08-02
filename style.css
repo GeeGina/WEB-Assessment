@@ -6,7 +6,7 @@
 
 html {
     font-family: 'Poppins', sans-serif;
-    color: #383838;
+    color: #5C5C5C;
 
 
 }
@@ -268,9 +268,7 @@ html {
         width: 100%;
     }
 
-    .inf {
-        display: none;
-    }
+ 
 
     .hero__box2 {
         margin: 32px 16px;
@@ -284,27 +282,57 @@ html {
     }
 
     /*-------information-------*/
-    .information__parent__box {
-        margin: 16px 16px 32px 16px;
+    .inf {
+        display: none;
     }
+    .information{
+        /* width: 100%; */
+        margin: 16px 16px 32px 16px;
+
+    }
+    .information__box img {
+        width: 100%;
+    }
+    .information__box{
+        margin-top: 64px;
+    }
+    /* .information__parent__box {
+        margin: 16px 16px 32px 16px;
+    } */
 
     .information a {
         color: #487BB5;
     }
 
     /*-------course-------*/
+    .course{
+        border: 1px solid #F2F2F2;
+    }
+    .course h2{
+        margin: 32px 0 16px 0;
+        font-weight: 900;
+    }
     .course__box {
         display: none;
     }
 
     .course__parent__box {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        
     }
 
     .course__button {
+
+        font-size: 24px;
         background-color: #D6D6D6;
         border: 0px solid transparent;
+        margin: 8px;
+        padding: 16px 0 24px 16px;
+        text-align: left;
+        color: #5C5C5C;
+        font-weight: 500;
     }
 
     /*-------thesis-------*/
@@ -312,6 +340,16 @@ html {
     .thesis__box1 p,
     .thesis__box2 {
         display: none;
+    }
+    .thesis{
+        width: 100%;
+    }
+    .thesis h2{
+        margin: 32px 0 16px 0;
+        font-weight: 900;
+    }
+    .thesis video {
+        width: 100%;
     }
 
     /*-------thesis-------*/
