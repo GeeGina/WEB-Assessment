@@ -23,7 +23,7 @@ html {
 
 @media screen and (min-width: 426px) {
 
-  
+
     h1,
     h2,
     h3,
@@ -45,7 +45,7 @@ html {
     }
 
     /*-------nav bar-------*/
-    nav {
+    .desktop {
         width: 100%;
         height: 32px;
         display: flex;
@@ -53,6 +53,10 @@ html {
         justify-content: space-between;
         margin: 16px 24px;
         text-align: center;
+    }
+
+    .mobile {
+        display: none;
     }
 
     .logo {
@@ -94,7 +98,7 @@ html {
     }
 
     .information a {
-        color: aqua;
+        color: #487BB5;
     }
 
     .information {
@@ -160,9 +164,11 @@ html {
     .course img {
         width: 100%;
     }
-.course__button{
-    display: none;
-}
+
+    .course__button {
+        display: none;
+    }
+
     /* -------thesis------- */
     .thesis {
         width: 100%;
@@ -225,10 +231,32 @@ html {
 
 /*----------------mobile----------------*/
 @media screen and (max-width: 426px) {
-    h2{
+    h2 {
         text-align: center;
     }
+
+    a {
+
+        text-decoration: none
+    }
+
     /*-------nav bar-------*/
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        width: 100%;
+        height: 64px;
+       
+    }
+    .mobile ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
 
     /*-------hero-------*/
     .hero {
@@ -261,31 +289,38 @@ html {
     }
 
     .information a {
-        color: aqua;
+        color: #487BB5;
     }
 
     /*-------course-------*/
     .course__box {
         display: none;
     }
-.course__parent__box{
-    display: flex;
-    flex-direction: column;
-}
-.course__button{
-    background-color: #D6D6D6;
-    border: 0px solid transparent;
-}
+
+    .course__parent__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course__button {
+        background-color: #D6D6D6;
+        border: 0px solid transparent;
+    }
+
     /*-------thesis-------*/
-    .thesis__box1 h3 ,.thesis__box1 p,.thesis__box2 {
+    .thesis__box1 h3,
+    .thesis__box1 p,
+    .thesis__box2 {
         display: none;
     }
-/*-------thesis-------*/
-.footer div{
-    display: none;
-}
-.footer{
-    width: 100%;
-    margin: 16px;
-}
+
+    /*-------thesis-------*/
+    .footer div {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+        margin: 16px;
+    }
 }
